@@ -1,39 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <a href="/">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <!-- Navlinks -->
+      <div class="navlinks">
+        <!-- Hamburger Icons -->
+        <div class="hamburger__menu">
+          <img
+            class="hamburger"
+            aria-label="menu icon"
+            src="images/icon-menu.svg"
+            alt="menu icon"
+          />
+          <img
+            class="close"
+            aria-label="close icon"
+            src="images/icon-close-menu.svg"
+            alt="close icon"
+          />
+        </div>
 
-  Features
-  Company
-  Careers
-  About
+        <div class="menu__start">
+          <ul>
+            <li class="features__dropdown" features-btn>
+              Features
+              <span aria-hidden="true" class="icon">
+                <img
+                  class="icon__down"
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="icon__up"
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </span>
 
-  Login
-  Register
+              <!-- Features dropdown menu -->
+              <ul class="features__dropdown__menu" features-menu>
+                <li>
+                  <span class="img">
+                    <img src="images/icon-todo.svg" alt="todo icon" />
+                  </span>
+                  <span>Todo List</span>
+                </li>
+                <li>
+                  <span class="img">
+                    <img src="images/icon-calendar.svg" alt="calendar icon" />
+                  </span>
+                  <span>Calendar</span>
+                </li>
+                <li>
+                  <span class="img">
+                    <img src="images/icon-reminders.svg" alt="reminders icon" />
+                  </span>
+                  <span>Reminders</span>
+                </li>
+                <li>
+                  <span class="img">
+                    <img src="images/icon-planning.svg" alt="planning icon" />
+                  </span>
 
-  Make remote work
+                  <span>Planning</span>
+                </li>
+              </ul>
+            </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+            <li class="company__dropdown" company-btn>
+              Company
+              <span aria-hidden="true" class="icon">
+                <img
+                  class="icon__down"
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="icon__up"
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </span>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+              <!-- Company dropdown menu -->
+              <ul class="company__dropdown__menu" company-menu>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="menu__end">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Intro content -->
+      <section class="intro">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+
+        <footer>
+          <img src="images/client-databiz.svg" alt="databiz logo" />
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="images/client-meet.svg" alt="meet logo" />
+          <img src="images/client-maker.svg" alt="maker logo" />
+        </footer>
+      </section>
+
+      <!-- Intro Image -->
+      <section class="intro__image">
+        <img
+          class="desktop"
+          src="images/image-hero-desktop.png"
+          alt="hero image"
+        />
+        <img
+          class="mobile"
+          src="images/image-hero-mobile.png"
+          alt="hero image"
+        />
+      </section>
+    </main>
+  </body>
 </html>
