@@ -28,6 +28,8 @@ header {
   align-items: center;
   gap: 4rem;
   padding: 1.5rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header > a {
