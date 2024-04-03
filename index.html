@@ -24,43 +24,30 @@
       <a href="/">
         <img src="images/logo.svg" alt="logo" />
       </a>
-      <!-- Navlinks -->
-      <div class="navlinks">
-        <!-- Hamburger Icons -->
-        <div class="hamburger__menu">
-          <img
-            class="hamburger"
-            aria-label="menu icon"
-            src="images/icon-menu.svg"
-            alt="menu icon"
-          />
-          <img
-            class="close"
-            aria-label="close icon"
-            src="images/icon-close-menu.svg"
-            alt="close icon"
-          />
-        </div>
+      <!-- Desktop Navlinks  Start-->
 
+      <div class="desktop__navlinks">
         <div class="menu__start">
           <ul>
-            <li class="features__dropdown" features-btn>
-              Features
-              <span aria-hidden="true" class="icon">
-                <img
-                  class="icon__down"
-                  src="images/icon-arrow-down.svg"
-                  alt="arrow down"
-                />
-                <img
-                  class="icon__up"
-                  src="images/icon-arrow-up.svg"
-                  alt="arrow up"
-                />
-              </span>
+            <li data-dropdown>
+              <div class="features__dropdown" data-dropdown-button>
+                Features
+                <span aria-hidden="true" class="icon">
+                  <img
+                    class="icon__down"
+                    src="images/icon-arrow-down.svg"
+                    alt="arrow down"
+                  />
+                  <img
+                    class="icon__up"
+                    src="images/icon-arrow-up.svg"
+                    alt="arrow up"
+                  />
+                </span>
+              </div>
 
               <!-- Features dropdown menu -->
-              <ul class="features__dropdown__menu" features-menu>
+              <ul class="features__dropdown__menu">
                 <li>
                   <span class="img">
                     <img src="images/icon-todo.svg" alt="todo icon" />
@@ -89,23 +76,25 @@
               </ul>
             </li>
 
-            <li class="company__dropdown" company-btn>
-              Company
-              <span aria-hidden="true" class="icon">
-                <img
-                  class="icon__down"
-                  src="images/icon-arrow-down.svg"
-                  alt="arrow down"
-                />
-                <img
-                  class="icon__up"
-                  src="images/icon-arrow-up.svg"
-                  alt="arrow up"
-                />
-              </span>
+            <li data-dropdown>
+              <div class="company__dropdown" data-dropdown-button>
+                Company
+                <span aria-hidden="true" class="icon">
+                  <img
+                    class="icon__down"
+                    src="images/icon-arrow-down.svg"
+                    alt="arrow down"
+                  />
+                  <img
+                    class="icon__up"
+                    src="images/icon-arrow-up.svg"
+                    alt="arrow up"
+                  />
+                </span>
+              </div>
 
               <!-- Company dropdown menu -->
-              <ul class="company__dropdown__menu" company-menu>
+              <ul class="company__dropdown__menu">
                 <li>History</li>
                 <li>Our Team</li>
                 <li>Blog</li>
@@ -120,22 +109,147 @@
           <button class="register">Register</button>
         </div>
       </div>
+
+      <!-- Desktop Navlinks  End-->
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger__menu">
+        <img
+          class="hamburger"
+          aria-label="menu icon"
+          src="images/icon-menu.svg"
+          alt="menu icon"
+        />
+      </div>
+
+      <!-- Mobile Navlinks Start-->
+
+      <div class="mobile__navlinks" data-dropdown>
+        <!-- Close Menu icon -->
+        <div class="close">
+          <button class="close__menu" title="Close menu">
+            <svg
+              class="close__menu__icon"
+              aria-label="close icon"
+              width="26"
+              height="26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill-rule="evenodd">
+                <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+                <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <ul>
+          <li data-dropdown>
+            <div class="features__dropdown" data-dropdown-button>
+              Features
+              <span aria-hidden="true" class="icon">
+                <img
+                  class="icon__down"
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="icon__up"
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </span>
+            </div>
+
+            <!-- Features dropdown menu -->
+            <ul class="features__dropdown__menu">
+              <li>
+                <span class="img">
+                  <img src="images/icon-todo.svg" alt="todo icon" />
+                </span>
+                <span>Todo List</span>
+              </li>
+              <li>
+                <span class="img">
+                  <img src="images/icon-calendar.svg" alt="calendar icon" />
+                </span>
+                <span>Calendar</span>
+              </li>
+              <li>
+                <span class="img">
+                  <img src="images/icon-reminders.svg" alt="reminders icon" />
+                </span>
+                <span>Reminders</span>
+              </li>
+              <li>
+                <span class="img">
+                  <img src="images/icon-planning.svg" alt="planning icon" />
+                </span>
+
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+
+          <li data-dropdown>
+            <div class="company__dropdown" data-dropdown-button>
+              Company
+              <span aria-hidden="true" class="icon">
+                <img
+                  class="icon__down"
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow down"
+                />
+                <img
+                  class="icon__up"
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow up"
+                />
+              </span>
+            </div>
+
+            <!-- Company dropdown menu -->
+            <ul class="company__dropdown__menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="buttons">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+
+      <!-- Drop shadow -->
+      <div class="drop__shadow"></div>
+
+      <!-- Mobile Navlinks End-->
     </header>
     <main>
       <!-- Intro content -->
       <section class="intro">
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button>Learn more</button>
+        <div class="content">
+          <h1><span>Make</span> remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+        </div>
 
         <footer>
-          <img src="images/client-databiz.svg" alt="databiz logo" />
-          <img src="images/client-audiophile.svg" alt="audiophile logo" />
-          <img src="images/client-meet.svg" alt="meet logo" />
-          <img src="images/client-maker.svg" alt="maker logo" />
+          <span>
+            <img src="images/client-databiz.svg" alt="databiz logo" />
+          </span>
+          <span>
+            <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          </span>
+          <span> <img src="images/client-meet.svg" alt="meet logo" /></span>
+          <span> <img src="images/client-maker.svg" alt="maker logo" /></span>
         </footer>
       </section>
 
